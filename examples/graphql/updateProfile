@@ -1,0 +1,28 @@
+mutation UpdateProfile($input: ProfileInput!) {
+  updateProfile(input: $input)
+}
+
+
+Query vars
+
+
+
+{
+  "input":{
+    "firstName": "jess cutie",
+    "lastName": "cutie",
+    "email": "jesscute@turbo.com",
+    "password": "123123",
+    "profilePicture": "xx.jpg",
+    "imABroker": true,
+    "brokerLicense": "123-696969"
+    
+  }
+}
+
+
+Headers
+
+{
+  "authorization" : "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Implc3NjdXRlQHR1cmJvLmNvbSIsInVzZXJJZCI6IjVkMmM1NmI1OTdhZDU2MTc4MGNhZTAzNCIsImV4cCI6MTU2MzQyMTA4OX0.dqPuBbtF13Cpgr6e5eobZJtMr2BygnM5WXsSokEjg60"
+}

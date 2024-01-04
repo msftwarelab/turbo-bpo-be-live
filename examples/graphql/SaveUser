@@ -1,0 +1,29 @@
+mutation SaveUser($input: SaveUserInput!) {
+  saveUser(input: $input) 
+
+}
+
+Query Vars
+
+{
+  "input":{
+    "email": "jontals143@mail.com",
+    "role": "ADMIN",
+    "firstname": "jon tals",
+    "lastname": "Wolvs",
+    "address": "elsalvador",
+    "status": "ACIVE",
+    "password": "123123123",
+    "city": "Eie city",
+    "zipCode": "9000",
+    "company": "Vololo",
+    "phoneNumber": "+12323422",
+    "state": "golden state"
+    
+  }
+}
+
+Http headers
+{
+  "authorization" : "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRqMDRAZ21haWwuY29tIiwidXNlcklkIjoiNWQzZWEzZWY4N2RlMDZlMGJlZTQxYWMzIiwiZXhwIjoxNTY3NTE5NDI5fQ.nqWHC3J3q9NxvsStd9Xy4sx-7Ay3VKf20vRfJL_jrVA"
+}

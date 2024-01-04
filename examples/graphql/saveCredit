@@ -1,0 +1,19 @@
+mutation SaveCredit($input: SaveCreditInput!) {
+  saveCredit(input: $input) 
+}
+
+query variables
+{
+  "input":{
+   "paypalOrderId": "696969",
+   "paypalToken": "56556",
+   "amount": 25
+  }
+}
+
+HTTP headers
+
+{
+  "authorization" : "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Implc3NjdXRlQHR1cmJvLmNvbSIsInVzZXJJZCI6IjVkMmM1NjI5ZmIyM2MzYmM2MjBjMTkzNCIsImV4cCI6MTU2NzQxNTA2NH0.q4l8DEFv7bmd8p3YwR434e2hWruT3f3QFc5_WLIccsU"
+  
+}

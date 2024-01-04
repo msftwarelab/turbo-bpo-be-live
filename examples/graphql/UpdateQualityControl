@@ -1,0 +1,17 @@
+mutation UpdateQualityControl {
+  updateQualityControl(
+    id:"5d8b3642e425c6789c5a90a3", 
+  	input:{
+      assignee:"5d7f77fdd8e170e98d340d9d",
+      assignReason:"please do process"
+    }
+  )
+  
+}  
+
+Http headers
+
+{
+  "authorization" : "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Implc3NjdXRlQHR1cmJvLmNvbSIsInVzZXJJZCI6IjVkMmM1NjI5ZmIyM2MzYmM2MjBjMTkzNCIsImV4cCI6MTU2MzcyMTQyNn0.ySxQHyNY6u9mPddi8eoUa080Am3b6_7_IHVbWnYRxZo"
+  
+}

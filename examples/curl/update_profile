@@ -1,0 +1,5 @@
+$ curl localhost:8080/graphql   -F operations='{ "query": "mutation ($input: UserInput!) { updateProfile(input: $input)
+ { id, profilePicture } }", "variables": { "input": {"profilePicture": null, "firstName": "jess curl", "lastName": "las
+tname curl", "email": "jesscute@turbo.com","password": "123123" } } }'   -F map='{ "0": ["variables.input.profilePictur
+e"] }'   -F 0=@./j.jpg
+{"data":{"updateProfile":{"id":"5dc12cf84f26a8f5c2501d92","profilePicture":null}}}

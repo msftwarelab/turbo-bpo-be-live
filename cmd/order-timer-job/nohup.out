@@ -1,0 +1,27 @@
+initialization turbo jobs services.
+ 2023-11-21 14:14:53 [info] config initialization...
+ 2023-11-21 14:14:53 [info] config: {
+	"appdefaulturl": "http://ec2-18-223-123-140.us-east-2.compute.amazonaws.com/",
+	"appfrontendurl": "http://turbodev.webronins.com/",
+	"appresetpasswordurl": "http://turbodev.webronins.com/reset-password/",
+	"databasename": "turboBpo",
+	"databaseurl": "mongodb://dbAdmin:tUrb0DBpA55w0rD@127.0.0.1:27017/admin?authSource=admin",
+	"environment": "staging",
+	"port": 6968
+}
+ 2023-11-21 14:14:53 [info] config initialization...done!
+[order-timer-job] 2023-11-21 14:14:53 [info] Started order timer job
+[order-timer-job] 2023-11-21 14:14:53 [verbose] @debug pipeline filter: {
+	"status": {
+		"$in": [
+			"ACTIVE",
+			"STANDBY",
+			"LATE"
+		]
+	}
+}
+[order-timer-job] 2023-11-21 14:14:53 [verbose] current date "2023-11-21T00:00:00Z"
+{
+	"ID": 0,
+	"Count": 11
+}

@@ -1,0 +1,20 @@
+# Use root/example as user/password credentials
+version: "3.1"
+
+services:
+  mongo:
+    image: mongo:latest
+    command: -v /data/db:/var/mongodb-data
+    restart: always
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: tUrb0DBpA55w0rD
+
+  mongo-express:
+    image: mongo-express
+    restart: always
+    ports:
+      - 1432:8081
+    environment:
+      ME_CONFIG_MONGODB_ADMINUSERNAME: root
+      ME_CONFIG_MONGODB_ADMINPASSWORD: tUrb0DBpA55w0rD

@@ -1,0 +1,99 @@
+kind: pipeline
+type: docker
+name: default
+
+clone:
+  disable: true
+steps:
+  - name: deploy-staging
+    image: appleboy/drone-ssh:1.5.5
+    settings:
+      host: ec2-18-223-123-140.us-east-2.compute.amazonaws.com
+      port: 22
+      command_timeout: 10m
+      username: root
+      password:
+        from_secret: ssh_hozzby_password
+      script:
+        - cd /var/turbo-bpo-be/cmd/
+        - git checkout staging
+        - git pull
+        - env GOOS=linux GOARCH=amd64 GO111MODULE=on /usr/local/go/bin/go build -a -installsuffix cgo -mod vendor -o /var/turbo-bin/main-staging
+        - systemctl stop turbo-be-staging.service
+        - cp -rf staging.config.json /var/turbo-bin
+        - cd /var/turbo-bpo-be/
+        - mkdir /var/turbo-bin/resources
+        - mkdir /var/turbo-bin/resources/staging
+        - cp -rf ./resources/staging/* /var/turbo-bin/resources/staging
+        - systemctl start turbo-be-staging.service
+        - cd /var/turbo-bpo-be/cmd/order-timer-job/
+        - systemctl stop turbo-be-job-staging.service
+        - env GOOS=linux GOARCH=amd64 GO111MODULE=on /usr/local/go/bin/go build  -a -installsuffix cgo -mod vendor -o /var/turbo-bin/main-jobs-staging
+        - cp -rf jobs.staging.config.json /var/turbo-bin
+        - chmod +x main-jobs-staging
+        - systemctl start turbo-be-job-staging.service
+    when:
+      branch:
+        - staging
+  - name: deploy-staging-new-server
+    image: appleboy/drone-ssh:1.5.5
+    settings:
+      host: 148.72.144.75
+      port: 22
+      command_timeout: 10m
+      username: root
+      password:
+        from_secret: ssh_password_new_server
+      script:
+        - cd /var/turbo-bpo-be/cmd/
+        - git checkout staging
+        - git pull
+        - env GOOS=linux GOARCH=amd64 GO111MODULE=on /usr/local/go/bin/go build -a -installsuffix cgo -mod vendor -o /var/turbo-bin/main-staging
+        - cp -rf staging.config.json /var/turbo-bin
+        - cd /var/turbo-bpo-be/
+        - mkdir /var/turbo-bin/resources
+        - mkdir /var/turbo-bin/resources/staging
+        - cp -rf ./resources/staging/* /var/turbo-bin/resources/staging
+        - systemctl restart turbo-be-staging.service
+        - cd /var/turbo-bpo-be/cmd/order-timer-job/
+        - env GOOS=linux GOARCH=amd64 GO111MODULE=on /usr/local/go/bin/go build  -a -installsuffix cgo -mod vendor -o /var/turbo-bin/main-jobs-staging
+        - cp -rf jobs.staging.config.json /var/turbo-bin
+        - chmod +x main-jobs-staging
+        - systemctl restart turbo-be-job-staging.service
+    when:
+      branch:
+        - staging
+  - name: deploy-production
+    image: appleboy/drone-ssh:1.5.5
+    settings:
+      host: ec2-18-223-123-140.us-east-2.compute.amazonaws.com
+      port: 22
+      command_timeout: 10m
+      username: root
+      password:
+        from_secret: ssh_hozzby_password
+      script:
+        - cd /var/turbo-bpo-be/cmd/
+        - git checkout master
+        - git pull
+        - env GOOS=linux GOARCH=amd64 GO111MODULE=on /usr/local/go/bin/go build -a -installsuffix cgo -mod vendor -o /var/turbo-bin/main-prod
+        - systemctl stop turbo-be.service
+        - cp -rf production.config.json /var/turbo-bin
+        - cd /var/turbo-bpo-be/cmd/
+        - mkdir /var/turbo-bin/resources/production
+        - cp -rf ./resources/production/* /var/turbo-bin/resources/production
+        - systemctl start turbo-be.service
+        - cd /var/turbo-bpo-be/cmd/order-timer-job/
+        - systemctl stop turbo-be-job.service
+        - env GOOS=linux GOARCH=amd64 GO111MODULE=on /usr/local/go/bin/go build  -a -installsuffix cgo -mod vendor -o /var/turbo-bin/main-jobs-production
+        - cp -rf jobs.production.config.json /var/turbo-bin
+        - chmod +x main-jobs-production
+        - systemctl start turbo-be-job.service
+    when:
+      branch:
+        - master
+  - name: slack
+    image: plugins/slack
+    settings:
+      webhook: https://hooks.slack.com/services/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
+      channel: dev

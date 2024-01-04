@@ -1,0 +1,41 @@
+{
+  profile{
+ 	id
+    email
+    firstName
+    lastName
+    company
+    phoneNumber
+    address
+    city
+    state
+    zipCode
+  	title
+    about
+    role
+    status
+    hdyfu
+    phoneConsultation
+    imABroker
+    broker
+    brokerLicense
+   agent
+    agentLicense
+    licenseDate
+    licenseExpirationDate
+    brokerage
+    yearOfExperience
+    profilePicture
+    createdDateTime
+    
+  }
+}
+
+
+
+header vars
+
+{
+  "authorization" : "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRqMDRAZ21haWwuY29tIiwidXNlcklkIjoiNWQzZWEzZWY4N2RlMDZlMGJlZTQxYWMzIiwiZXhwIjoxNTY0MzkzMDkzfQ.zENBLGKGhnh5km41OreCneSLNeFVfFDN6sq2rHcBxdc"
+  
+}

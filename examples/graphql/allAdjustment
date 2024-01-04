@@ -1,0 +1,11 @@
+{
+  allAdjustment{
+    id
+    label
+    value
+  }
+}
+Header Vars
+{
+  "authorization" : "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Implc3NjdXRlQHR1cmJvLmNvbSIsInVzZXJJZCI6IjVkMmM1NjI5ZmIyM2MzYmM2MjBjMTkzNCIsImV4cCI6MTU2Mzc4MzI1N30.je60BJPcE4bQ1QZV6OtKxp22InaL9gg5Yx6uOCc9G5I"
+}

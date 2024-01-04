@@ -1,0 +1,14 @@
+mutation UpdateAdjustment($id: ID!, $value: Float!) {
+  updateAdjustment(id: $id, value: $value)
+}
+
+Query vars
+{
+  "id": "1231231",
+  "value": 1231
+}
+
+Headers
+{
+  "authorization" : "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Implc3NjdXRlQHR1cmJvLmNvbSIsInVzZXJJZCI6IjVkMmM1NmI1OTdhZDU2MTc4MGNhZTAzNCIsImV4cCI6MTU2MzQyMTA4OX0.dqPuBbtF13Cpgr6e5eobZJtMr2BygnM5WXsSokEjg60"
+}

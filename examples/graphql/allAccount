@@ -1,0 +1,17 @@
+{
+  allAccount{
+    id
+    createdDateTime
+    username
+    password
+    recordType
+    LastUpdateTime
+  }
+}
+
+HTTP headers
+
+{
+  "authorization" : "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1hcmxvbnBhbWlzYUBnbWFpbC5jb20iLCJ1c2VySWQiOiI1ZDJjNTYyOWZiMjNjM2JjNjIwYzE5MzQiLCJleHAiOjE1NjM0MzA3Mzh9.6Ff2GBU7b8YSSKjhyo7sibicQtpFmHpAnszso_UgUzo"
+}
+

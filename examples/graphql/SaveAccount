@@ -1,0 +1,26 @@
+mutation SaveAccount($input: AccountInput!) {
+  saveAccount(input: $input) 
+}
+
+
+Query Vars
+
+
+
+{
+  "input":{
+    "recordType": "WALKER",
+    "company": "THE JONEL WALKER GROUP",
+    "webSite": "www.walktabay.ph",
+    "username": "username",
+    "password": "password"
+    
+  }
+}
+
+Http headers
+
+{
+  "authorization" : "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Implc3NjdXRlQHR1cmJvLmNvbSIsInVzZXJJZCI6IjVkMmM1NjI5ZmIyM2MzYmM2MjBjMTkzNCIsImV4cCI6MTU2MzcyMTQyNn0.ySxQHyNY6u9mPddi8eoUa080Am3b6_7_IHVbWnYRxZo"
+  
+}

@@ -1,0 +1,15 @@
+{
+  allProfileDoc{
+    id
+    url
+    createdDateTime
+    fileName
+    type
+    
+  }
+}
+
+HTTP headers
+{
+  "authorization" : "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Implc3NjdXRlQHR1cmJvLmNvbSIsInVzZXJJZCI6IjVkMmM1NjI5ZmIyM2MzYmM2MjBjMTkzNCIsImV4cCI6MTU2MzY3NzExOH0.ciucpOd6UfHiWtNC0M7s1N3MghxnQGjUeJgpUAr2Axo"
+}

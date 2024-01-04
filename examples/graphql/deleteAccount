@@ -1,0 +1,13 @@
+mutation DeleteAccount($id: ID!) {
+  deleteAccount(id: $id) 
+}
+
+Query Vars
+{
+  "id": "5d347824760bbc944b183dfc"
+}
+
+Http Headers
+{
+  "id": "5d347824760bbc944b183dfc"
+}

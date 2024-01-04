@@ -1,0 +1,9 @@
+{
+    "environment": "development",
+    "port": 6969,
+    "AppDefaultUrl" :"http://localhost:6969/",
+    "AppFrontEndUrl" : "http://localhost:6969/",
+    "AppResetPasswordUrl": "http://turbodev.webronins.com/reset-password:6969/",
+    "databaseUrl": "mongodb://localhost:27017",
+    "databaseName":"turboBpo"
+}

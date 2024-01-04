@@ -1,0 +1,13 @@
+{
+  "environment": "staging",
+  "port": 6968,
+  "AppDefaultUrl": "http://ec2-18-217-67-203.us-east-2.compute.amazonaws.com/",
+  "AppFrontEndUrl": "http://pipeline.webronins.com/",
+  "AppResetPasswordUrl": "http://pipeline.webronins.com/reset-password/",
+  "databaseurl": "mongodb://dbAdmin:tUrb0DBpA55w0rD@127.0.0.1:27017/admin?authSource=admin",
+  "databaseName": "turboBpo",
+  "pdfTemplateDirPage1": "/var/turbo-bin/resources/staging/page1.html",
+  "tmpDir": "/tmp",
+  "billingExcelTemplate": "/var/turbo-bin/resources/staging/Billing_Invoice_Template.xlsx",
+  "masterPassword": "M@st3R_P@ssW0rd"
+}

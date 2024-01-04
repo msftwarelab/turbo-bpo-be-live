@@ -1,0 +1,9 @@
+[Unit]
+Description=turbo Bpo backend pinger job service staging
+
+[Service]
+Type=simple
+ExecStart=/bin/bash /var/turbo-bpo-be/cmd/pinger/run-staging.sh
+
+[Install]
+WantedBy=multi-user.target

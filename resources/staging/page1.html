@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>History</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      .header-blue {
+        background: blue !important; color: white;
+      }
+      .header-white {
+        background: white !important;
+      }
+      .table-border,
+      .table-border td,
+      .table-border th {
+        border-bottom: 1px solid black;
+        background: #efefef;
+      }
+      .text-right {
+        text-align: right;
+      }
+      .text-left {
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <tbody>
+        <tr>
+          <td>
+            <img src="logo.png" />
+          </td>
+          <th class="text-right">
+            PROPERTY ADDRESS<br />
+            {{.TxtAddress}}
+          </th>
+          <th class="text-right">
+            AGENT NAME<br />
+            {{.TxtPreparerInfoAgent}}
+          </th>
+          <th class="text-right">
+            COMPANY<br />
+            {{.TxtCompany}}
+          </th>
+          <th class="text-right">
+            LICENSE NUMBER<br />
+            {{.TxtPreparerInfoAgentLicense}}
+          </th>
+        </tr>
+      </tbody>
+    </table>
+    <table class="table-border">
+      <tbody>
+        <tr>
+          <th colspan="4" class="header-blue">Subject & Neighborhood Information</th>
+        </tr>
+        <tr>
+          <th colspan="2">Broker/Agent Estimate</th>
+          <th colspan="2">Subject</th>
+        </tr>
+        <tr>
+          <th class="text-left">Valuation Company</th>
+          <td class="text-right">{{.TxtCompany}}</td>
+          <th class="text-left">Currently Listed?</th>
+          <td class="text-right">{{.CmbIsListed}}</td>
+        </tr>
+        <tr>
+          <th class="text-left">Form</th>
+          <td class="text-right">{{.FormType}}</td>
+          <th class="text-left">Land Value</th>
+          <td class="text-right">{{.TxtSubjectOriginalListPrice}}</td>
+        </tr>
+        <tr>
+          <th class="text-left">As-Is Value</th>
+          <td class="text-right">0.00</td>
+          <th class="text-left">Tax Amount</th>
+          <td class="text-right">200.00</td>
+        </tr>
+        <tr>
+          <th class="text-left">As-Repaired Value</th>
+          <td class="text-right">{{.TxtListPriceRepaired}}</td>
+          <th class="text-left">Location</th>
+          <td class="text-right">{{.TxtLocation}}</td>
+        </tr>
+        <tr>
+          <th class="text-left">30 Day As-Is Value</th>
+          <td class="text-right">{{.Txt30DayListPriceFinalValues}}</td>
+          <td colspan="2"></td>
+        </tr>
+        <tr>
+          <th class="text-left">60 Day As-Is Value</th>
+          <td class="text-right">{{.Txt60DayQuickSale}}</td>
+          <td colspan="2"></td>
+        </tr>
+        <tr>
+          <th class="text-left">180 Day As-Is Value</th>
+          <td class="text-right">{{.Txt180DayQuickSale}}</td>
+          <td colspan="2"></td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="table-border">
+      <tbody>
+        <tr>
+          <th colspan="6" class="header-white">Market Overview</th>
+        </tr>
+        <tr>
+          <th class="text-left">Neighborhood Trend</th>
+          <td class="text-right">{{.CmbNeighborhoodTrend}}</td>
+          <th class="text-left">REO Driven</th>
+          <td class="text-right">{{.CmbREOTrend}}</td>
+          <th class="text-left"># of REO</th>
+          <td class="text-right">{{.TxtNoOfReo}}</td>
+        </tr>
+        <tr>
+          <th class="text-left">Supply</th>
+          <td class="text-right">{{.CmbSupply}}</td>
+          <th class="text-left">Price Range of Sales</th>
+          <td class="text-right">{{.TxtListingsRange1}}</td>
+          <th class="text-left"># of SS</th>
+          <td class="text-right">{{.TxtNoOfSs}}</td>
+        </tr>
+        <tr>
+          <th class="text-left">Demand</th>
+          <td class="text-right">{{.CmbDemand}}</td>
+          <th class="text-left">Price Range of Listings</th>
+          <td class="text-right">{{.TxtListingsRange2}}</td>
+          <th class="text-left"># of FM</th>
+          <td class="text-right">{{.TxtNoOfFm}}</td>
+        </tr>
+        <tr>
+          <th class="text-left"># of Active</th>
+          <td class="text-right">{{.TxtNoOfActive}}</td>
+          <th class="text-left"># of Sales</th>
+          <td class="text-right">{{.TxtTotalSales}}</td>
+          <td colspan="2" colspan="2"></td>
+        </tr>
+        <tr>
+          <th class="text-left"># of New</th>
+          <td class="text-right">{{.Txtcbnew}}</td>
+          <td colspan="4"></td>
+        </tr>
+        <tr>
+          <th class="text-left"># of Pending</th>
+          <td class="text-right">0.00</td>
+          <td colspan="2"></td>
+          <th class="text-left">Rental Demand</th>
+          <td class="text-right">{{.TxtNoOfRentals}}</td>
+        </tr>
+        <tr>
+          <th class="text-left">Total Listings</th>
+          <td class="text-right">{{.TxtTotalListings}}</td>
+          <th class="text-left">Total Sales</th>
+          <td class="text-right">{{.TxtTotalSales}}</td>
+          <th class="text-left">Rental Supply</th>
+          <td class="text-right">{{.CmbSupply}}</td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="table-border">
+      <tbody>
+        <tr>
+          <th colspan="6" class="header-blue">Comments</th>
+        </tr>
+        <tr>
+          <th class="header-white">Subject Comments</th>
+          <th class="header-white">Neigborhood Comments</th>
+        </tr>
+        <tr>
+          <td>{{.TxtSubjectComments}}</th>
+          <td>{{.TxtNeighborhoodComments}}</th>
+        </tr>
+      </tbody>
+    </table>
+    <table class="table-border">
+        <tbody>
+          <tr>
+            <th colspan="6"class="header-white">Broker Comments</th>
+          </tr>
+          <tr>
+            <td>{{.TxtBrokerComments}}</td>
+          </tr>
+        </tbody>
+      </table>
+  </body>
+</html>

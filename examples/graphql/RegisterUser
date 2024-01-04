@@ -1,0 +1,22 @@
+mutation RegisterUser($input: RegisterInput!) {
+  registerUser(input: $input) {
+		id
+    firstName
+    lastName
+    status
+    role
+    state
+  }
+  
+}  
+
+---- query variables
+
+{
+  "input":{
+    "email": "jesscute@gmail.com",
+    "password": "123123123",
+    "firstName": "Daryl James",
+    "lastName": "Balangigue"
+  }
+}

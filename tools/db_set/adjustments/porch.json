@@ -1,0 +1,12 @@
+{"userId": "5dc12cf84f26a8f5c2501d92", "category": "Porch","order": 1, "label": "0 - 25,000","from": 0,"to": 25000,"value": 250}
+{ "userId": "5dc12cf84f26a8f5c2501d92", "category": "Porch","order": 2, "label": "26,000 - 50,000","from": 26000, "to": 50000,"value": 500}
+{ "userId": "5dc12cf84f26a8f5c2501d92", "category": "Porch","order": 3, "label": "51,000 - 100,000","from": 26000,"to": 50000,"value": 1000}
+{ "userId": "5dc12cf84f26a8f5c2501d92", "category": "Porch","order": 4, "label": "101,000 - 200,000","from": 101000,"to": 200000,"value": 1000}
+{ "userId": "5dc12cf84f26a8f5c2501d92", "category": "Porch","order": 5, "label": "201,000 - 300,000","from": 201000,"to": 300000,"value": 2000}
+{ "userId": "5dc12cf84f26a8f5c2501d92", "category": "Porch","order": 6, "label": "301,000 - 400,000","from": 301000,"to": 400000,"value": 2500}
+{ "userId": "5dc12cf84f26a8f5c2501d92", "category": "Porch","order": 7, "label": "401,000 - 500,000","from": 401000,"to": 500000,"value": 3000}
+{ "userId": "5dc12cf84f26a8f5c2501d92", "category": "Porch","order": 8, "label": "501,000 - 600,000","from": 501000,"to": 600000,"value": 3500}
+{ "userId": "5dc12cf84f26a8f5c2501d92", "category": "Porch","order": 9, "label": "601,000 - 700,000","from": 601000,"to": 700000,"value": 4000}
+{ "userId": "5dc12cf84f26a8f5c2501d92", "category": "Porch","order": 10, "label": "701,000 - 800,000","from": 701000,"to": 800000,"value": 4500}
+{ "userId": "5dc12cf84f26a8f5c2501d92", "category": "Porch","order": 11, "label": "801,000 - 900,000","from": 801000,"to": 900000,"value": 5000}
+{ "userId": "5dc12cf84f26a8f5c2501d92", "category": "Porch","order": 12, "label": "901,000 - 100,000","from": 801000,"to": 900000,"value": 5500}

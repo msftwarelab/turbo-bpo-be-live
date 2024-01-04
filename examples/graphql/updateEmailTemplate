@@ -1,0 +1,24 @@
+mutation UpdateEmailTemplate($id: ID!, $input: UpdateEmailTemplateInput!) {
+  updateEmailTemplate(id: $id, input: $input) 
+
+}
+
+Query Vars
+
+{
+  "id": "5d75a53c856a9741138bb449",
+  "input":{
+    "type": "ADMINISTRATOR1",
+    "template": "Activation1",
+    "subject": "new user Activation1",
+    "message": "hello you account is activated1"
+    
+  }
+} }
+}
+
+HTTP Headers
+{
+  "authorization" : "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Implc3NjdXRlQHR1cmJvLmNvbSIsInVzZXJJZCI6IjVkMmM1NjI5ZmIyM2MzYmM2MjBjMTkzNCIsImV4cCI6MTU2MzcyMTQyNn0.ySxQHyNY6u9mPddi8eoUa080Am3b6_7_IHVbWnYRxZo"
+  
+}

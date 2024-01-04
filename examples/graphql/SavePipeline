@@ -1,0 +1,26 @@
+mutation SavePipeline($input: PipelineInput!) {
+  savePipeline(input: $input) 
+
+}
+
+
+Query Vars
+{
+  "input":{
+    "orderNumber": "696969611",
+    "address": "cambridge CDO",
+    "country": "Phil.",
+    "location": "Urban",
+    "company": "volopus ltd",
+    "type": "Order",
+    "orderType": "Data Entry",
+    "assign": "Turbo BPO",
+    "mls": "Matrix"
+    }
+}  
+Http headers
+
+{
+  "authorization" : "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Implc3NjdXRlQHR1cmJvLmNvbSIsInVzZXJJZCI6IjVkMmM1NjI5ZmIyM2MzYmM2MjBjMTkzNCIsImV4cCI6MTU2MzcyMTQyNn0.ySxQHyNY6u9mPddi8eoUa080Am3b6_7_IHVbWnYRxZo"
+  
+}

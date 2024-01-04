@@ -1,0 +1,9 @@
+[Unit]
+Description=turbo Bpo backend service
+
+[Service]
+Type=simple
+ExecStart=/bin/bash /var/turbo-bpo-be/cmd/run.sh
+
+[Install]
+WantedBy=multi-user.target

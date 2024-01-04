@@ -1,0 +1,24 @@
+{
+ allEmailTemplate(
+   filter:{
+    offset: 0,
+    limit: 10,
+    subject:"new"
+  }
+){
+  totalCount
+  results{
+    id
+    type
+    template
+    subject
+    message
+  }
+}
+}
+
+
+{
+  "authorization" : "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Implc3NjdXRlQHR1cmJvLmNvbSIsInVzZXJJZCI6IjVkMmM1NjI5ZmIyM2MzYmM2MjBjMTkzNCIsImV4cCI6MTU2ODE5MzM4MX0.YOI7SM8zK6t6Deef2rmRfjP1xH3_VSYUlwKPi9dN0j4"
+  
+}

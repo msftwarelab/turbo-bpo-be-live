@@ -1,0 +1,24 @@
+curl blasterhero.com:6968/graphql \
+  -F operations='{ "query": "mutation ($input: ProfileDocInput!) { saveProfileDoc(input: $input)  }", "variables": { "input": {"doc": null, "type": "RESUME" } } }' \
+  -F map='{ "0": ["variables.input.doc"] }' \
+  -F 0=@./a.txt \
+  -H  "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Implc3NjdXRlQHR1cmJvLmNvbSIsInVzZXJJZCI6IjVkMmM1NjI5ZmIyM2MzYmM2MjBjMTkzNCIsImV4cCI6MTU2Mzg3MTIwNn0.FxXZn7Tti4E7gwxT1hOQfnAqy7QAapMFpG7L5VSzYIQ" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  curl blasterhero.com:6968/graphql \
+  -F operations='{ "query": "mutation ($input: ProfileDocInput!) { saveProfileDoc(input: $input)  }", "variables": { "input": {"doc": null, "type": "RESUME" } } }' \
+  -F map='{ "0": ["variables.input.doc"] }' \
+  -F 0=@./a.txt \
+  -H  "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Implc3NjdXRlQHR1cmJvLmNvbSIsInVzZXJJZCI6IjVkMmM1NjI5ZmIyM2MzYmM2MjBjMTkzNCIsImV4cCI6MTU2Mzg3MTIwNn0.FxXZn7Tti4E7gwxT1hOQfnAqy7QAapMFpG7L5VSzYIQ" 

@@ -1,0 +1,9 @@
+[Unit]
+Description=turbo Bpo jobs service staging
+
+[Service]
+Type=simple
+ExecStart=/bin/bash /var/turbo-bpo-be/cmd/order-timer-job/run-staging.sh
+
+[Install]
+WantedBy=multi-user.target

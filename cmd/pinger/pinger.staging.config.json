@@ -1,0 +1,6 @@
+{
+    "environment": "staging",
+    "graphQLSserver": "http://148.72.144.75:6968",
+    "runEveryInSec": 300,
+    "slackWebHookURL": "https://hooks.slack.com/services/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"
+}

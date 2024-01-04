@@ -1,0 +1,21 @@
+{
+  allCompany(
+    filter:{
+    offset: 0,
+    limit: 20
+  }
+  ){
+    totalCount
+    results{
+      id
+      name
+      website
+      isAdmin
+      isClient
+    }
+  }
+}
+{
+  "authorization" : "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Implc3NjdXRlQHR1cmJvLmNvbSIsInVzZXJJZCI6IjVkMmM1NjI5ZmIyM2MzYmM2MjBjMTkzNCIsImV4cCI6MTU2ODE5MzM4MX0.YOI7SM8zK6t6Deef2rmRfjP1xH3_VSYUlwKPi9dN0j4"
+  
+}

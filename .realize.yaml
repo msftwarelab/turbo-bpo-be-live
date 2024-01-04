@@ -1,0 +1,32 @@
+settings:
+  legacy:
+    force: false
+    interval: 0s
+schema:
+- name: turbo-bpo
+  path: .
+  commands:
+    build:
+      status: false
+      method: go build -mod vendor -o ./main
+    run:
+      status: false
+      method: sh ./main
+  watcher:
+    extensions:
+    - go
+    paths:
+    - .
+    ignored_paths:
+    - .git
+    - .realize
+    - vendor
+    scripts:
+      - type: after
+        command: Taskkill /IM init.exe /F   
+      - type: after
+        command: go run ./cmd 
+
+
+    
+        

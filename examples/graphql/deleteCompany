@@ -1,0 +1,15 @@
+mutation deleteCompany($ID: ID) {
+  deleteCompany(id: $ID)
+}
+
+Query Vars
+{
+  "id": "5d6fe1407185359a8727877b"
+}
+
+Http headers
+
+{
+  "authorization" : "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Implc3NjdXRlQHR1cmJvLmNvbSIsInVzZXJJZCI6IjVkMmM1NjI5ZmIyM2MzYmM2MjBjMTkzNCIsImV4cCI6MTU2MzcyMTQyNn0.ySxQHyNY6u9mPddi8eoUa080Am3b6_7_IHVbWnYRxZo"
+  
+}

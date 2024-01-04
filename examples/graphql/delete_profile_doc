@@ -1,0 +1,16 @@
+mutation DeleteProfileDoc($id: String!) {
+  deleteProfileDoc(id: $id)
+}
+
+
+Query vars
+{
+  "id" : "314453421"
+}
+
+
+Headers vars
+
+{
+  "authorization" : "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Implc3NjdXRlQHR1cmJvLmNvbSIsInVzZXJJZCI6IjVkMmM1NmI1OTdhZDU2MTc4MGNhZTAzNCIsImV4cCI6MTU2MzQyMTA4OX0.dqPuBbtF13Cpgr6e5eobZJtMr2BygnM5WXsSokEjg60"
+}

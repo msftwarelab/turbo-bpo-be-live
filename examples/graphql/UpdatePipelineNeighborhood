@@ -1,0 +1,16 @@
+mutation  UpdatePipelineNeighborhood{
+  UpdatePipelineNeighborhood(
+    pipelineId:"5d81f6dfb6c3f9bf48f9e3e4",
+     input:{
+       marketTrend: "test1",
+       monthlyPercentage: 1
+    }
+  )
+}  
+
+HTTP headers
+
+{
+  "authorization" : "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1hcmxvbnBhbWlzYUBnbWFpbC5jb20iLCJ1c2VySWQiOiI1ZDJjNTYyOWZiMjNjM2JjNjIwYzE5MzQiLCJleHAiOjE1NjM0MzA3Mzh9.6Ff2GBU7b8YSSKjhyo7sibicQtpFmHpAnszso_UgUzo"
+}
+

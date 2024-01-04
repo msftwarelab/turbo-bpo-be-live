@@ -1,0 +1,22 @@
+mutation SaveCompany($input: CompanyInput!) {
+  saveCompany(input: $input)
+}
+
+
+Query Vars
+
+
+
+{
+ "input": {
+  "name": "company2",
+  "website": "company2.com"
+}
+}
+
+Http headers
+
+{
+  "authorization" : "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Implc3NjdXRlQHR1cmJvLmNvbSIsInVzZXJJZCI6IjVkMmM1NjI5ZmIyM2MzYmM2MjBjMTkzNCIsImV4cCI6MTU2MzcyMTQyNn0.ySxQHyNY6u9mPddi8eoUa080Am3b6_7_IHVbWnYRxZo"
+  
+}

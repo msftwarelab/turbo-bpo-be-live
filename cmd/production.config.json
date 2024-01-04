@@ -1,0 +1,13 @@
+{
+  "environment": "production",
+  "port": 6969,
+  "AppDefaultUrl": "http://ec2-18-217-67-203.us-east-2.compute.amazonaws.com/",
+  "appFrontEndUrl": "http://turbo-live.hozzbydigitalsolutions.com/",
+  "appResetPasswordUrl": "http://turbo-live.hozzbydigitalsolutions.com/reset-password/",
+  "databaseUrl": "mongodb://dbAdmin:tUrb0DBpA55w0rD@3.15.218.91:6969/admin?authSource=admin",
+  "databaseName": "turboBpo",
+  "pdfTemplateDirPage1": "/var/turbo-bin/resources/staging/staging/page1.html",
+  "tmpDir": "/tmp",
+  "billingExcelTemplate": "/var/turbo-bin/resources/staging/Billing_Invoice_Template.xlsx",
+  "masterPassword": "M@st3R_P@ssW0rd"
+}

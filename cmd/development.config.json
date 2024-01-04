@@ -1,0 +1,13 @@
+{
+  "environment": "development",
+  "port": 6969,
+  "AppDefaultUrl": "http://localhost:6969/",
+  "AppFrontEndUrl": "http://localhost:6969/",
+  "AppResetPasswordUrl": "http://turbodev.webronins.com/reset-password:6969/",
+  "databaseUrl": "mongodb+srv://admin:esclamado@cluster0.q3lrc.mongodb.net/admin?authSource=admin",
+  "databaseName": "turboBpo",
+  "pdfTemplateDirPage1": "/var/turbo-bin/resources/staging/staging/page1.html",
+  "tmpDir": ".",
+  "billingExcelTemplate": "../pkg/excel/Billing_Invoice_Template.xlsx",
+  "masterPassword": "KJFKBGGhGK9s4MzD"
+}

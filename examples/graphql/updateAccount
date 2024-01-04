@@ -1,0 +1,25 @@
+mutation Updateccount($id: ID!, $input: AccountInput!) {
+  updateAccount(id: $id, input: $input) 
+}
+
+Query Vars
+
+
+
+{	
+  "id": "5d34786039c95d746abfc91c",
+  "input":{
+    "recordType": "WALKER=update",
+    "company": "THE JONEL WALKER GROUP",
+    "webSite": "www.walktabay.ph",
+    "username": "username-update",
+    "password": "password"
+    
+  }
+}
+
+HTTP Headers
+{
+  "authorization" : "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Implc3NjdXRlQHR1cmJvLmNvbSIsInVzZXJJZCI6IjVkMmM1NjI5ZmIyM2MzYmM2MjBjMTkzNCIsImV4cCI6MTU2MzcyMTQyNn0.ySxQHyNY6u9mPddi8eoUa080Am3b6_7_IHVbWnYRxZo"
+  
+}
